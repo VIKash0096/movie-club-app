@@ -1,0 +1,288 @@
+/* Title */
+.admin-content-box h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.movie-tab-bar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.movie-tab-bar button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.movie-tab-bar button:hover {
+  background-color: #ddd;
+}
+
+.movie-tab-bar button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.movie-tab-content {
+  margin-top: 20px;
+  text-align: left;
+}
+/* form layout for Add Movie tab */
+
+.movie-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-add-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+
+.movie-add-form .form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-add-form .form-row label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.movie-add-form .form-row input,
+.movie-add-form .form-row select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #222;
+  max-width: 300px;
+}
+
+.movie-add-form .form-row input::placeholder {
+  color: #888;
+}
+
+.movie-add-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  margin: 0 auto;
+  transition: background 0.3s ease;
+}
+
+.movie-add-form button:hover {
+  background-color: #0056b3;
+}
+.movie-upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+/* consistent style for select movie row */
+.movie-upload-form .form-row select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #222;
+  max-width: 300px;
+  margin-top: 4px;
+}
+
+.movie-upload-form .form-row label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.movie-upload-form .form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.movie-upload-form label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* Hide default file input */
+.movie-upload-form input[type="file"] {
+  display: none;
+}
+
+/* Style for "Choose File" button */
+.choose-file-btn {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* On hover */
+.choose-file-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Display selected file name */
+.file-name {
+  font-size: 14px;
+  color: #333;
+  margin-top: 6px;
+}
+
+/* Small note under file input */
+.file-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+.clear-file-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.clear-file-btn:hover {
+  color: darkred;
+}
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;  /* 🟦 adds spacing between Choose button and file name */
+}
+.choose-file-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.image-preview {
+  margin-top: 12px;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px;
+  background-color: #f7f7f7;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+/* show date card style */
+.date-time-group {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fafafa;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* time rows inside date group */
+.time-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+/* better spacing for add-time button */
+.time-inputs > button {
+  margin-top: 0.5rem;
+}
+
+/* style the add date button */
+.add-date-btn {
+  margin-top: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.add-date-btn:hover {
+  background: #0056b3;
+}
+
+/* style the remove time button */
+.time-row button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+.time-row button:hover {
+  background: #b02a37;
+}
+
+/* consistent form-row spacing */
+.form-row label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+/* style both Add Date and Add Time the same way */
+.add-action-btn {
+  margin-top: 0.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.add-action-btn:hover {
+  background: #0056b3;
+}
+.remove-date-btn {
+  margin-left: 0.5rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+.remove-date-btn:hover {
+  background: #b02a37;
+}

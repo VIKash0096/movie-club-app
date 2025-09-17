@@ -1,0 +1,131 @@
+.ticket-booking-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ticket-booking-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.booking-section {
+  margin-bottom: 30px;
+}
+
+.booking-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.booking-card {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  color: #555;
+}
+/* Movie block container */
+.movie-toggle-block1 {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Header (movie name + arrow button) */
+.ticket-movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #e9f0ff;
+  border-bottom: 1px solid #ccc;
+}
+
+.movie-name {
+  color: #333;
+}
+
+.dropdown1-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dropdown1-toggle:hover {
+  color: #007bff;
+}
+
+/* List of showtimes */
+.showtime1-list {
+  padding: 12px 24px;
+  list-style: none;
+  margin: 0;
+  background-color: #fff;
+}
+
+.showtime1-list li {
+  padding: 6px 0;
+  font-size: 14px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.showtime1-list li:last-child {
+  border-bottom: none;
+}
+
+/* Show row layout */
+.showtime-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 14px;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* Container for buttons */
+.showtime-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Red trash button */
+.delete-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+/* Green screening button */
+.mark-screening-btn {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.mark-screening-btn:hover {
+  background-color: #218838;
+}
